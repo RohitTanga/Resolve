@@ -21,17 +21,38 @@ Resolve automates borrower outreach across the entire recovery lifecycle:
 
 ## Architecture
 
-Borrower Reply (Simulated or WhatsApp)
-        ↓
-FastAPI Backend
-        ↓
-Intent Detection (Claude Haiku)
-        ↓
-State Machine Transition
-        ↓
-Response Generation (Claude Sonnet)
-        ↓
-Dashboard Update + Optional WhatsApp via Twilio
+```
+┌─────────────────────────────────────────┐
+│         Loan Officer Dashboard          │
+│         (React + TypeScript)            │
+└──────────────────┬──────────────────────┘
+                   │ simulate reply / send message
+                   ▼
+┌─────────────────────────────────────────┐
+│            FastAPI Backend              │
+│         (Python + Uvicorn)              │
+└──────┬───────────────────┬──────────────┘
+       │                   │
+       ▼                   ▼
+┌─────────────┐   ┌─────────────────────┐
+│   Intent    │   │   State Machine     │
+│  Detection  │   │     FSM Engine      │
+│   (Haiku)   │   │     7 States        │
+└──────┬──────┘   └──────────┬──────────┘
+       │                     │
+       └──────────┬──────────┘
+                  ▼
+┌─────────────────────────────────────────┐
+│    Response Generation (Sonnet)         │
+│   Context-aware, empathetic messages    │
+└──────────────────┬──────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────┐
+│           Dashboard Update              │
+│      State change + Message logged      │
+└─────────────────────────────────────────┘
+```
 
 ## State Machine
 
