@@ -71,7 +71,6 @@ Resolve automates borrower outreach across the entire recovery lifecycle:
 - **Frontend**: React + TypeScript + Vite
 - **Backend**: FastAPI (Python)
 - **AI**: Anthropic Claude API (Haiku for classification, Sonnet for generation)
-- **Messaging**: Twilio WhatsApp
 - **State Machine**: Custom FSM engine
 
 ## Setup
