@@ -93,12 +93,7 @@ npm run dev
 
 Open http://localhost:5173
 
-## WhatsApp Integration (optional, not required for demo)
-1. Create Twilio account at twilio.com
-2. Join WhatsApp sandbox
-3. Add TWILIO_ACCOUNT_SID and TWILIO_AUTH_TOKEN to .env
-4. Run ngrok http 8000
-5. Set webhook URL in Twilio console to https://your-ngrok-url/webhook/whatsapp
+
 
 ## Built by
 Rohit — exploring AI-first fintech infrastructure for India
