@@ -260,9 +260,9 @@ export default function App() {
           display: "flex", alignItems: "center", justifyContent: "center",
           color: "#fff", fontWeight: 800, fontSize: 18, flexShrink: 0,
         }}>R</div>
-        <span style={{ fontWeight: 700, fontSize: 16, color: "#111827" }}>Riverline</span>
+        <span style={{ fontWeight: 700, fontSize: 16, color: "#111827" }}>Resolve</span>
         <span style={{ color: "#d1d5db", fontSize: 18, margin: "0 2px" }}>|</span>
-        <span style={{ color: "#6b7280", fontSize: 14 }}>Borrower Intelligence</span>
+        <span style={{ color: "#6b7280", fontSize: 14 }}>Credit Recovery Intelligence</span>
 
         <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 10 }}>
           <span style={{ fontSize: 12, color: "#9ca3af" }}>

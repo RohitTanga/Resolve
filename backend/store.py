@@ -115,7 +115,7 @@ def seed_data():
             {
                 "role": "agent",
                 "content": (
-                    "Hi Priya! This is Priya from Riverline. I noticed your home loan EMI of "
+                    "Hi Priya! This is Priya from Resolve. I noticed your home loan EMI of "
                     "₹8,200 is 12 days overdue. I understand life gets busy — would you like to "
                     "arrange the payment today or discuss a convenient date?"
                 ),
@@ -130,7 +130,7 @@ def seed_data():
                 "role": "agent",
                 "content": (
                     "Of course, Priya! That works perfectly — I'll note Friday as your payment date. "
-                    "You can pay via the Riverline app or NEFT to our account. "
+                    "You can pay via the Resolve app or NEFT to our account. "
                     "I'll send you a reminder on Thursday. 😊"
                 ),
                 "timestamp": ts(timedelta(days=2, hours=1, minutes=55)),
@@ -141,7 +141,7 @@ def seed_data():
             {
                 "role": "agent",
                 "content": (
-                    "Hello Arjun, this is Priya from Riverline. Your two-wheeler loan EMI of ₹3,200 "
+                    "Hello Arjun, this is Priya from Resolve. Your two-wheeler loan EMI of ₹3,200 "
                     "has been overdue for 28 days. I'd love to help find a solution that works for you — "
                     "could we talk about what's making it difficult right now?"
                 ),
@@ -168,7 +168,7 @@ def seed_data():
             {
                 "role": "agent",
                 "content": (
-                    "Namaste Sunita ji! I'm Priya from Riverline. Your gold loan EMI of ₹6,750 "
+                    "Namaste Sunita ji! I'm Priya from Resolve. Your gold loan EMI of ₹6,750 "
                     "is due. Is everything okay? I'm here to help if you need any assistance."
                 ),
                 "timestamp": ts(timedelta(hours=20)),
@@ -192,7 +192,7 @@ def seed_data():
             {
                 "role": "agent",
                 "content": (
-                    "Hello Mohammed, this is Priya from Riverline regarding your business loan EMI "
+                    "Hello Mohammed, this is Priya from Resolve regarding your business loan EMI "
                     "of ₹11,500 which is now 45 days overdue. We'd really like to work with you to "
                     "resolve this — please get in touch at your earliest convenience."
                 ),
@@ -217,7 +217,7 @@ def seed_data():
             {
                 "role": "agent",
                 "content": (
-                    "Hi Kavitha! Priya here from Riverline. Just a gentle reminder that your "
+                    "Hi Kavitha! Priya here from Resolve. Just a gentle reminder that your "
                     "education loan EMI of ₹5,100 was due recently. Would you like help with the payment?"
                 ),
                 "timestamp": ts(timedelta(days=4)),

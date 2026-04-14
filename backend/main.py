@@ -9,7 +9,7 @@ from ai_service import detect_intent, generate_message, generate_risk_summary
 from state_machine import BorrowerState, Intent, get_next_action, transition
 from store import borrowers, messages
 
-app = FastAPI(title="Riverline Agent API")
+app = FastAPI(title="Resolve Agent API")
 
 app.add_middleware(
     CORSMiddleware,
@@ -117,7 +117,7 @@ def run_reply_pipeline(borrower: dict, reply_text: str) -> dict:
 
 @app.get("/")
 def root():
-    return {"status": "Riverline API running"}
+    return {"status": "Resolve API running"}
 
 
 class AddBorrowerRequest(BaseModel):

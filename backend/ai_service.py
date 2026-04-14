@@ -66,7 +66,7 @@ def _greeting_instruction(borrower_name: str, message_history: list) -> tuple[st
     if not message_history:
         return (
             f"This is your very first message to {borrower_name}. "
-            "Introduce yourself warmly and briefly as Priya from Riverline.",
+            "Introduce yourself warmly and briefly as Priya from Resolve.",
             "2-3 sentences.",
         )
 
@@ -88,7 +88,7 @@ def _greeting_instruction(borrower_name: str, message_history: list) -> tuple[st
         return (
             f"Last message was {hours_ago:.0f} hours ago — use a light, casual greeting only, "
             f"like 'Hey {borrower_name},' or just their name. "
-            "NEVER re-introduce yourself as Priya from Riverline.",
+            "NEVER re-introduce yourself as Priya from Resolve.",
             "1-2 sentences.",
         )
     else:
@@ -96,7 +96,7 @@ def _greeting_instruction(borrower_name: str, message_history: list) -> tuple[st
         return (
             f"Last message was {days_ago:.0f} day(s) ago — open with a warm, human check-in, "
             f"like 'Hi {borrower_name}, hope you're doing okay' or similar. "
-            "NEVER re-introduce yourself as Priya from Riverline.",
+            "NEVER re-introduce yourself as Priya from Resolve.",
             "2-3 sentences.",
         )
 
@@ -105,7 +105,7 @@ def generate_message(
     borrower: dict, state: BorrowerState, intent: Intent | None = None,
     message_history: list | None = None,
 ) -> str:
-    """Generate a warm WhatsApp message for the borrower as Priya from Riverline."""
+    """Generate a warm WhatsApp message for the borrower as Priya from Resolve."""
     if message_history is None:
         message_history = []
 
@@ -123,7 +123,7 @@ def generate_message(
         history_block = ""
 
     system_prompt = (
-        "You are Priya, a compassionate credit wellness assistant at Riverline.\n"
+        "You are Priya, a compassionate credit wellness assistant at Resolve.\n"
         "Your role is to help borrowers navigate their loan repayment journey with empathy.\n"
         "Guidelines:\n"
         "- Always be warm, respectful, and non-threatening\n"
